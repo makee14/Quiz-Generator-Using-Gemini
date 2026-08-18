@@ -1,5 +1,7 @@
 # Quiz-Generator-Using-Gemini
-This is a simple AI projects where one can select a file from a path and pass it to google LLM. As of now, it can only take a word and pdf file. The output of the AI is save as pdf.
+This is a simple AI project wherein one can select a file from their file path and pass it to google LLM. As of now, it can only take a word and a pdf file as an input. The output of the AI will be save as pdf or not, it is totally fine as the output will also be printed in your Command Line Interface (CLI).
+
+For best experience, use VS Code if possible.
 
 You need to this first in your terminal:
 pip install google-genai python-docx fpdf2
