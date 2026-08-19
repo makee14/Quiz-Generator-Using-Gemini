@@ -17,5 +17,5 @@ Option 2: Create a new environment variable.
           - Create new.
           - Note: The variable name should only be: GEMINI_API_KEY
           - The value is your api key. There you go!
-          - But first, restart you VS Code or any.
+          - But first, restart your VS Code or any.
           
