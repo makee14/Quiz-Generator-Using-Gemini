@@ -34,13 +34,13 @@ def guess_mime_type(path):
 
 def sanitize_for_pdf(text):
     replacements = {
-        "\u2018": "'",  # ‘
-        "\u2019": "'",  # ’
-        "\u201c": '"',  # “
-        "\u201d": '"',  # ”
-        "\u2013": "-",  # – en dash
-        "\u2014": "-",  # — em dash
-        "\u2026": "...",  # … ellipsis
+        "\u2018": "'",  
+        "\u2019": "'",  
+        "\u201c": '"',  
+        "\u201d": '"',  
+        "\u2013": "-",  
+        "\u2014": "-",  
+        "\u2026": "...",  
     }
     for smart, plain in replacements.items():
         text = text.replace(smart, plain)
@@ -116,7 +116,6 @@ def main():
         config=types.GenerateContentConfig(
             system_instruction="""
             - Limit your responses within 1000 words.
-            - Gather the title, proponent.
             - Automatically detect when a line is becoming too long.
             - Wrap text naturally without breaking words unnecessarily.
             - Prefer wrapping at spaces, punctuation, or sentence boundaries.
